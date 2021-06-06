@@ -23,10 +23,10 @@ const Home = () => {
     return ( <div className='body'>
         <div className='header-container'>
             <div className='header-sub1'>
-                <h3>USD - United States Dolars</h3>
+                <h3>EUR - Euro</h3>
             </div>
             <div className='header-sub2'>
-                <h2>USD</h2>
+                <h2>EUR</h2>
                 <input type='number'/>
             </div>
         </div>
