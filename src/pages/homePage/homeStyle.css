@@ -41,6 +41,7 @@
     justify-content: space-between;
     background-color: #f6f6f6;
     border-radius: 5px;
+    margin-bottom: 12px;
 }
 
 .card-header{
