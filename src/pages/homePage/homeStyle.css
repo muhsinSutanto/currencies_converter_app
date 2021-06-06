@@ -24,6 +24,11 @@
 .header-sub2{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.header-sub2 input{
+    font-size: 18px;
+    width: 100px;
 }
 
 .card-container{

@@ -9,7 +9,7 @@ const Home = () => {
             </div>
             <div className='header-sub2'>
                 <h2>USD</h2>
-                <h2>10.0000</h2>
+                <input type='number'/>
             </div>
         </div>
         <div className='card-container'>
