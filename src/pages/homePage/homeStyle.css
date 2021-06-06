@@ -35,3 +35,47 @@
     padding: 20px 40px;
 }
 
+.addBtn-container{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+.addBtn-container:hover{
+    cursor: pointer;
+}
+.option-container{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.select-container{
+    padding: 10px;
+}
+
+.select-container select{ 
+    width: 200px;
+    border: none;
+}
+
+.select-container select:hover{ 
+    cursor: pointer;
+}
+
+.submit-container{
+    padding: 10px;
+}
+
+.submit-container button{
+    border: none;
+    background-color: #fff;
+}
+
+.submit-container button:hover{
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+}
+
+

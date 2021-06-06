@@ -1,8 +1,8 @@
-const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=76d6acb0420f7522a14a1700bb00123b&symbols=USD,IDR,GBP,SGD,KYP,JYP,MYR,CHF&format=1'
+const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=76d6acb0420f7522a14a1700bb00123b&symbols=IDR,GBP,SGD,USD,CAD,INR,JPY,MYR,CHF,KRW&format=1'
 
 const CURRENCY_ABBRIV = [
     {
-        "stand" : "United States Dolars",
+        "stand" : "United States Dolar",
         "key" : "USD"
     },
     {
@@ -10,21 +10,38 @@ const CURRENCY_ABBRIV = [
         "key": "IDR"
     },
     {
-        "key" : "GPP",
-        "stand": "teunyaho"
+        "key" : "GBP",
+        "stand": "British Pound Sterling"
     },
     {
-        "stand" : "singapore Dolars",
+        "stand" : "singapore Dolar",
         "key" : "SGD"
     },
     {
         "key" : "MYR",
-        "stand": "test"
+        "stand": "Malaysian Ringgit"
     },
     {
         "key" : "CHF",
-        "stand": "hai"
+        "stand": "Swiss Franch"
+    },
+    {
+        "key" : "JPY",
+        "stand": "Japanese Yen"
+    },
+    {
+        "key" : "INR",
+        "stand": "Indian Rupee"
+    },
+    {
+        "key" : "KRW",
+        "stand": "Korean Won"
+    },
+    {
+        "key" : "CAD",
+        "stand": "Canadian Dollar"
     }
+
 ]
 
 export {
