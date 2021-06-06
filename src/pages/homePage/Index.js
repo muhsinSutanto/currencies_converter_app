@@ -1,9 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Card from '../../components/card/Index';
+import { BASE_URL } from '../../utils/const';
 
 import './homeStyle.css'
 
 const Home = () => {
+    const [currencies, setCurrencies] = useState([])
+
+    useEffect(() => {
+        fetch(BASE_URL)
+            .then(res => res.json())
+            .then(data => {
+                const allData = data.rates
+                const value = Object.entries(allData).map(data => data)
+                setCurrencies(value)
+            }
+            ).catch(err => console.log(err))
+                
+    }, [])
+
+    console.log(currencies)
     return ( <div className='body'>
         <div className='header-container'>
             <div className='header-sub1'>
@@ -15,7 +31,12 @@ const Home = () => {
             </div>
         </div>
         <div className='card-container'>
-            <Card/>
+            {
+                currencies.map((cur, idx) => (
+                    <Card cur={cur}/>
+                ))
+            }
+
         </div>
     </div> );
 }
